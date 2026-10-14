@@ -1,0 +1,186 @@
+
+/* STYLE GENERAL DE LA PAGE */
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    
+    /* Dégradé en arrière-plan */
+    background-image: linear-gradient(
+        135deg,
+        #090979,
+        #6a11cb,
+        #b721ff,
+        #ff4bf6
+    );
+
+    
+}
+
+
+
+.login {
+    display: inline-block;
+    width: 350px;
+    padding: 40px;
+    margin-top: 100px;
+    vertical-align: middle;
+
+    border: 2px solid white;
+    border-radius: 25px;
+
+    background-color: rgba(15, 15, 45, 0.85);
+
+    box-shadow:
+        0 0 15px rgba(255, 255, 255, 0.4),
+        0 0 35px rgba(183, 33, 255, 0.8),
+        0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+
+/* TITRE */
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    /* Ombre lumineuse autour du texte */
+    text-shadow: 0 0 15px #d9a7ff;
+}
+
+
+/* LIGNE SOUS LE TITRE  */
+
+.underline {
+    width: 120px;
+    height: 6px;
+    margin: auto;
+    border-radius: 10px;
+
+    /* Dégradé  */
+    background-image: linear-gradient(
+        to right,
+        #00dbde,
+        #fc00ff
+    );
+
+    box-shadow: 0 0 15px #fc00ff;
+}
+
+
+/* FORMULAIRE */
+
+form {
+    margin-top: 40px;
+}
+
+
+/* LABEL USER NAME */
+
+label {
+    display: block;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/*  CHAMPS DE SAISIE */
+
+input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px 15px;
+    margin-bottom: 30px;
+
+    border: 2px solid #8e7dff;
+    border-radius: 25px;
+
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #222;
+    font-size: 15px;
+
+    
+    transition: 0.3s;
+}
+
+
+
+input[type="email"] {
+    border-color: #00e5ff;
+}
+
+
+input[type="password"] {
+    border-color: #ff4b91;
+}
+
+
+
+input:focus {
+    outline: none;
+
+
+    border-color: #b721ff;
+    box-shadow: 0 0 15px #b721ff;
+}
+
+
+/*  BOUTON SUBMIT */
+
+button {
+    display: block;
+    margin: 10px auto 0;
+
+    padding: 15px 45px;
+
+    border: none;
+    border-radius: 30px;
+
+    /* Dégradé du bouton */
+    background-image: linear-gradient(
+        to right,
+        #00dbde,
+        #7b2ff7,
+        #fc00ff
+    );
+
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+   
+    box-shadow: 0 5px 20px rgba(123, 47, 247, 0.6);
+
+   
+    transition: 0.3s;
+}
+
+
+/* Effet au passage de la souris */
+
+button:hover {
+    /* Le bouton remonte légèrement */
+    transform: translateY(-4px);
+
+    
+    box-shadow: 0 10px 30px rgba(252, 0, 255, 0.8);
+
+
+}
+
+/* Effet lorsque le bouton est cliqué */
+
+button:active {
+    transform: translateY(0);
+}
